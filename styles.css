@@ -1,0 +1,64 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#gameBoard {
+  display: grid;
+  width: 300px;
+  height: 300px;
+  grid-template-columns: auto auto auto;
+}
+
+.block {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+}
+
+.block:hover {
+  cursor: pointer;
+  background: green;
+}
+
+#block-0, #block-1, #block-2 {
+  border-top: none;
+}
+#block-0, #block-3, #block-6 {
+  border-left: none;
+}
+#block-6, #block-7, #block-8 {
+  border-bottom: none;
+}
+#block-2, #block-5, #block-8 {
+  border-right: none;
+}
+
+#winner {
+  font-size: xx-large;
+  color: red;
+}
+
+h1 {
+  margin: 50px;
+}
+
+#newGame {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: green;
+  margin: 50px;
+}
